@@ -114,3 +114,5 @@ Potential future additions include:
 Created by Julia Styrčáková.
 
 A project created to explore web development, interface design, and interactive browser applications.
+
+PS: If you cant acces the site I am deeply sorry, sometimes othe people couldnt run it. But thats probably because those re my images stored in my computer, you know? However you can copy the code into your editor and run it
