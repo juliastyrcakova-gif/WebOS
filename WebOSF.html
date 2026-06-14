@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<body style="
+    background-color: oklch(100% 0.00011 271.152);
+    background-image: url('b5bc3eeac227a4f859fae5d42d6b1903.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+">
+  <div style="position: absolute; width: 100%; display: flex; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.25); color: #fff; justify-content: space-between;">
+ 
+    <p style="margin-left: 10px;">
+      Julis-WebOS
+    </p>
+ 
+    <p id="timeElement" style="margin-right: 10px;"></p>
+ 
+    <p style="position:absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) ">
+     WELCOME
+    </p>
+ 
+  </div>
+ 
+  <!-- Taskbar buttons to open windows -->
+  <div style="position: absolute; top: 50px; left: 10px; display: flex; gap: 8px;">
+    <button onclick="openWindow('window')">Welcome</button>
+    <button onclick="openWindow('friends')">Friends</button>
+    <button onclick="openWindow('doodles')">Doodles</button>
+    <button onclick="openWindow('locked in')">Locked in</button>
+    <button onclick="openWindow('dream')">Dream</button>
+<button onclick="openWindow('movie')">Movie</button>
+
+  </div>
+ 
+<div id="window" style="
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    width: fit-content;
+    position: absolute;
+    top: 80px;
+    left: calc(50% - 150px);
+    background-color: white;
+    padding: 8px;
+    border-radius: 20px; ">
+ 
+    <!-- Close button -->
+    <div style="text-align: right;">
+      <button onclick="closeWindow('window')">✕</button>
+    </div>
+ 
+    <h1 style="
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+        font-size: 28px;
+    ">
+        Welcome to my OS
+        <img src="Ashlyn.webp"
+             alt="Profile Picture"
+             style="
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                object-fit: cover;
+             ">
+    </h1>
+ 
+    <h1 style="margin: 5px; font-size: 20px;">
+        ⊹₊˚‧︵‿₊୨ᰔ୧₊‿︵‧˚₊⊹
+    </h1>
+ 
+    <h2 style="margin: 8px 0;">Introduction</h2>
+ 
+    <p style="margin: 4px 0;">I want to become a mechanical engineer!</p>
+    <p style="margin: 4px 0;">I love sports, books, and BUILDING</p>
+    <p style="margin: 4px 0;">My dream school is MIT</p>
+    <p style="margin: 4px 0;">My favourite super-hero is Spider-man</p>
+ 
+    <a href="https://open.spotify.com/artist/4V8LLVI7PbaPR0K2TGSxFF">Spotify</a>
+    |
+    <a href="https://github.com/juliastyrcakova-gif/Julis-WebOS">Github</a>
+ 
+</div>
+ 
+<div id="friends" style="
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 220px;
+    position: absolute;
+    top: 170px;
+    right: 400px;
+    z-index: 10;
+    background-color: white;
+    padding: 8px;
+    border-radius: 12px;
+">
+
+
+ 
+    <!-- Close button -->
+    <div style="text-align: right;">
+      <button onclick="closeWindow('friends')">✕</button>
+    </div>
+ 
+    <h3 style="margin: 5px 0; font-size: 13px;">
+        Friends ݁ ˖Ი𐑼⋆
+    </h3>
+ 
+    <img src="feaa221fd149f87d11355b3d72697583.jpg"
+         alt="Full Image"
+         style="
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+         ">
+ 
+</div>
+<div id="locked in" style="
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 220px;
+    position: absolute;
+    top: 170px;
+    right: 400px;
+    z-index: 10;
+    background-color: white;
+    padding: 8px;
+    border-radius: 12px;
+">
+    <!-- Close button -->
+    <div style="text-align: right;">
+      <button onclick="closeWindow('locked in')">✕</button>
+    </div>
+ 
+    <h3 style="margin: 5px 0; font-size: 13px;">
+      Locked in ݁ ˖Ი𐑼⋆
+    </h3>
+ 
+    <img src="stiahnuť (11).jpg"
+         alt="Full Image"
+         style="
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+         ">
+ 
+</div>
+ 
+<div id="movie" style="
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 220px;
+    position: absolute;
+    top: 170px;
+    right: 400px;
+    z-index: 10;
+    background-color: white;
+    padding: 8px;
+    border-radius: 12px;
+">
+    <!-- Close button -->
+    <div style="text-align: right;">
+      <button onclick="closeWindow('movie')">✕</button>
+    </div>
+ 
+    <h3 style="margin: 5px 0; font-size: 13px;">
+      Movie ݁ ˖Ი𐑼⋆
+    </h3>
+ 
+    <image src="iron.jpg"
+         alt="Full iamge"
+         style="
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+         ">
+ 
+</div>
+<div id="doodles" style="
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 160px;
+    position: absolute;
+    top: 80px;
+    left: 380px;
+    z-index: 10;
+    background-color: white;
+    padding: 8px;
+    border-radius: 12px;
+">
+ 
+    <!-- Close button -->
+    <div style="text-align: right;">
+      <button onclick="closeWindow('doodles')">✕</button>
+    </div>
+ 
+    <h3 style="margin: 5px 0; font-size: 13px;">
+        Doodles ݁ ˖Ი𐑼⋆
+    </h3>
+ 
+    <img src="391c8c154b633723f9787e67a75836c3.jpg"
+         alt="Full Image"
+         style="
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+         ">
+ 
+</div>
+<div id="dream" style="
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 160px;
+    position: absolute;
+    top: 80px;
+    left: 380px;
+    z-index: 10;
+    background-color: white;
+    padding: 8px;
+    border-radius: 12px;
+">
+ 
+    <!-- Close button -->
+    <div style="text-align: right;">
+      <button onclick="closeWindow('dream')">✕</button>
+    </div>
+ 
+    <h3 style="margin: 5px 0; font-size: 13px;">
+        Beauty ݁ ˖Ი𐑼⋆
+    </h3>
+ 
+    <img src="dream.webp"
+         alt="Full Image"
+         style="
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+         ">
+ 
+</div>
+<div style="
+    position: absolute;
+    top: 110px;
+    left: 10px;
+    z-index: 5;
+">
+  <div class="selected" onclick="openStarJournal()" style="
+      text-align: center;
+      padding: 16px;
+      filter: drop-shadow(0 0 8px black);
+      width: fit-content;
+      cursor: pointer;
+  ">
+    <img src="icon.jpg" style="width: 64px; height: 64px; border-radius:16px;">
+    <p style="margin: 0px; color: #ffe7e7;">Star Journal</p>
+  </div>
+</div>
+<!-- Star Journal App Window -->
+<div id="starJournal" style="
+    display:none;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    width: 280px;
+    position: absolute;
+    top: 120px;
+    left: 550px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+">
+
+    <div style="text-align:right;">
+        <button onclick="closeWindow('starJournal')">✕</button>
+    </div>
+
+    <h2 style="margin-top:0;">
+        ⭐ Star Journal
+    </h2>
+
+    <p>Today's thoughts:</p>
+
+    <textarea
+        placeholder="Write here..."
+        style="
+            width:95%;
+            height:140px;
+            resize:none;
+            border-radius:10px;
+            padding:8px;
+            font-family:Arial;
+        "
+    ></textarea>
+
+    <br><br>
+
+   <p>What are you reviewing today?</p>
+
+<input
+    id="journalTitle"
+    type="text"
+    placeholder="Movie, Book, Game..."
+    style="
+        width:95%;
+        padding:8px;
+        border-radius:10px;
+        margin-bottom:10px;
+    "
+>
+
+<p>Star Rating:</p>
+
+<select id="starRating" style="padding:6px; border-radius:8px;">
+    <option value="⭐">⭐ 1 Star</option>
+    <option value="⭐⭐">⭐⭐ 2 Stars</option>
+    <option value="⭐⭐⭐">⭐⭐⭐ 3 Stars</option>
+    <option value="⭐⭐⭐⭐">⭐⭐⭐⭐ 4 Stars</option>
+    <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐ 5 Stars</option>
+</select>
+
+<br><br>
+
+<textarea
+    id="journalText"
+    placeholder="Write your review here..."
+    style="
+        width:95%;
+        height:140px;
+        resize:none;
+        border-radius:10px;
+        padding:8px;
+        font-family:Arial;
+    "
+></textarea>
+
+<br><br>
+
+<button onclick="saveEntry()">Save Entry</button>
+
+<div id="savedEntries" style="margin-top:15px;"></div>
+</div>
+ 
+<div style="
+    position: absolute;
+    top: 110px;
+    left: 120px;
+    z-index: 5;
+">
+  <div class="selected" onclick="openWindow('constellationExplorer')" style="
+      text-align: center;
+      padding: 16px;
+      filter: drop-shadow(0 0 8px black);
+      width: fit-content;
+      cursor: pointer;
+  ">
+    <img src="f40e46e4b44ba092ac827056ba32f0e2.jpg"
+         style="width: 64px; height: 64px; border-radius:16px;">
+    <p style="margin:0; color:rgb(247, 231, 221);">Constellations</p>
+  </div>
+</div>
+<div id="constellationExplorer" style="
+    display:none;
+    border:1px solid #ccc;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+    width:320px;
+    position:absolute;
+    top:150px;
+    left:650px;
+    background:white;
+    padding:10px;
+    border-radius:20px;
+">
+
+    <div style="text-align:right;">
+        <button onclick="closeWindow('constellationExplorer')">✕</button>
+    </div>
+
+    <h2>✨ Constellation Explorer</h2>
+
+    <p>Select a constellation:</p>
+
+    <select id="constellationSelect" onchange="showConstellation()">
+        <option value="">Choose one...</option>
+        <option value="orion">Orion</option>
+        <option value="ursaMajor">Ursa Major</option>
+        <option value="cassiopeia">Cassiopeia</option>
+        <option value="leo">Leo</option>
+        <option value="scorpius">Scorpius</option>
+    </select>
+
+    <div id="constellationInfo" style="
+        margin-top:15px;
+        padding:10px;
+        border-radius:10px;
+        background:#f7f7f7;
+    ">
+        Pick a constellation to learn about it.
+        <button onclick="favoriteConstellation()">
+⭐ Favorite This
+</button>
+
+<p id="favoriteDisplay"></p>
+    </div>
+
+</div>
+ 
+ 
+ 
+
+
+</div>
+ 
+<script>
+// 1. Open a window by making it visible
+function openWindow(id) {
+    document.getElementById(id).style.display = "block";
+}
+ 
+// 2. Close a window by hiding it
+function closeWindow(id) {
+    document.getElementById(id).style.display = "none";
+}
+ 
+// Clock
+function updateTime() {
+    document.getElementById("timeElement").innerHTML = new Date().toLocaleString();
+}
+updateTime();
+setInterval(updateTime, 1000);
+ 
+// Drag all three windows
+dragElement(document.getElementById("window"));
+dragElement(document.getElementById("friends"));
+dragElement(document.getElementById("doodles"));
+dragElement(document.getElementById("starJournal"));
+dragElement(document.getElementById("locked in"));
+dragElement(document.getElementById("dream"));
+dragElement(document.getElementById("constellationExplorer"));
+dragElement(document.getElementById("movie"));
+
+
+function dragElement(element) {
+  var startX = 0, startY = 0, startLeft = 0, startTop = 0;
+ 
+  element.onmousedown = startDragging;
+ 
+ function startDragging(e) {
+if (
+    e.target.tagName === "TEXTAREA" ||
+    e.target.tagName === "INPUT" ||
+    e.target.tagName === "BUTTON" ||
+    e.target.tagName === "SELECT" ||
+    e.target.tagName === "OPTION"
+) {
+    return;
+}
+
+    e = e || window.event;
+    e.preventDefault();
+
+    startX = e.clientX;
+    startY = e.clientY;
+    startLeft = element.offsetLeft;
+    startTop = element.offsetTop;
+
+    element.style.transform = "none";
+    element.style.right = "auto";
+
+    document.onmouseup = stopDragging;
+    document.onmousemove = doDrag;
+}
+ 
+  function doDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    element.style.left = (startLeft + e.clientX - startX) + "px";
+    element.style.top  = (startTop  + e.clientY - startY) + "px";
+  }
+ 
+  function stopDragging() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+<script>
+function openStarJournal() {
+    openWindow("starJournal");
+}
+
+</script>
+<script>
+function saveEntry() {
+
+    const title = document.getElementById("journalTitle").value;
+    const rating = document.getElementById("starRating").value;
+    const review = document.getElementById("journalText").value;
+
+    if (title.trim() === "" || review.trim() === "") {
+        alert("Please fill out both fields.");
+        return;
+    }
+
+    document.getElementById("savedEntries").innerHTML += `
+        <div style="
+            border:1px solid #ddd;
+            border-radius:10px;
+            padding:8px;
+            margin-top:8px;
+            background:#fafafa;
+        ">
+            <strong>${title}</strong><br>
+            ${rating}<br><br>
+            ${review}
+        </div>
+    `;
+
+    document.getElementById("journalTitle").value = "";
+    document.getElementById("journalText").value = "";
+}
+</script>
+<script>
+    function showConstellation() {
+
+    const value =
+        document.getElementById("constellationSelect").value;
+
+    const info =
+        document.getElementById("constellationInfo");
+
+    if(value === "orion"){
+        info.innerHTML =
+        "🏹 Orion<br><br>The Hunter. One of the most famous constellations in the night sky. Contains the bright stars Betelgeuse and Rigel.";
+    }
+
+    if(value === "ursaMajor"){
+        info.innerHTML =
+        "🐻 Ursa Major<br><br>The Great Bear. Home of the Big Dipper asterism and one of the easiest constellations to find.";
+    }
+
+    if(value === "cassiopeia"){
+        info.innerHTML =
+        "👑 Cassiopeia<br><br>A queen from Greek mythology. Recognizable because of its distinctive W shape.";
+    }
+
+    if(value === "leo"){
+        info.innerHTML =
+        "🦁 Leo<br><br>Represents a lion. Best seen during spring in the northern hemisphere.";
+    }
+
+    if(value === "scorpius"){
+        info.innerHTML =
+        "🦂 Scorpius<br><br>A large constellation representing a scorpion. Contains the bright red star Antares.";
+    }
+
+}
+function favoriteConstellation(){
+
+    const select =
+        document.getElementById("constellationSelect");
+
+    const name =
+        select.options[select.selectedIndex].text;
+
+    if(select.value === ""){
+        return;
+    }
+
+    document.getElementById("favoriteDisplay")
+        .innerHTML =
+        "⭐ Favorite constellation: " + name;
+}
+</script>
+ 
+</body>
+</html>
